@@ -12,6 +12,17 @@ from matplotlib import pyplot as plt
 
 
 def convert_str_to_num(x):
+    """
+    Parameters
+    ----------
+    x : string
+        total area given as a stirng(in sqft and other formats).
+    Returns
+    -------
+    float
+        area in float for convertible else nan.
+
+    """
     temp = x.split('-')
     if len(temp) == 2:
         return (float(temp[0])+float(temp[1]))/2
