@@ -49,5 +49,6 @@ del df1['size']  # Deleting size column as its useful data is fetched in new col
 # Applying convert_str-to_num function to total_sqft column
 df1['area'] = df1['total_sqft'].apply(convert_str_to_num)
 
+# NEXT STEPS:
 
 
